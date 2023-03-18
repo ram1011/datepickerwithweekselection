@@ -1,0 +1,17 @@
+<h1>
+  <!-- Datepicker -->
+</h1>
+<label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start" value="" 
+(change)="startDateChange($event)"
+[min]="startdateFrom" max="2023-12-31">
+<br>
+<hr>
+
+<label for="end">End date:</label>
+
+<input type="date" id="end" name="trip-start"
+ value=""
+ (change)="endDateChange($event)"
+ [min]="startdateFrom" max="2023-12-31">
